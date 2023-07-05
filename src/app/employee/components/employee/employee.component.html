@@ -1,0 +1,17 @@
+<div>
+  <h2>Employee Details</h2>
+  <div *ngFor="let employee of employees">
+    <h3>{{ employee.name }}</h3>
+    <p>Type: {{ employee.type }}</p>
+    <p>Salary: {{ employee.salary }}</p>
+    <p *ngIf="employee.type === 'Developer'">
+      Programming Languages: {{ employee.options.programmingLanguages?.join(", ") }}
+    </p>
+    <p *ngIf="employee.type === 'Designer'">
+      Design Tools: {{ employee.options.designTools?.join(", ") }}
+    </p>
+    <p *ngIf="employee.type === 'Manager'">
+      Department: {{ employee.options.department }}
+    </p>
+  </div>
+</div>
