@@ -1,0 +1,8 @@
+<div>
+  <h2>Shape Details</h2>
+  <div *ngFor="let shape of shapes">
+    <h3>{{ shape.calculateArea() }}</h3>
+    <h3>{{ shape.calculatePerimeter() }}</h3>
+    <hr/>
+  </div>
+</div>

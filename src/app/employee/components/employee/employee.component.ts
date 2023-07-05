@@ -4,8 +4,7 @@ import { Employee } from '../../interfaces/employee.interface';
 
 @Component({
   selector: 'app-employee',
-  templateUrl: './employee.component.html',
-  styleUrls: ['./employee.component.scss']
+  templateUrl: './employee.component.html'
 })
 export class EmployeeComponent {
   employees: Employee[];

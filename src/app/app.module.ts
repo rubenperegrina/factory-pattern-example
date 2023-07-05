@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { EmployeeModule } from './employee/employee.module';
+import { ShapeModule } from './shape/shape.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { EmployeeModule } from './employee/employee.module';
   ],
   imports: [
     BrowserModule,
-    EmployeeModule
+    EmployeeModule,
+    ShapeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
