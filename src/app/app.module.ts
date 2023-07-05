@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { EmployeeModule } from './employee/employee.module';
 import { ShapeModule } from './shape/shape.module';
+import { AuthenticationModule } from './authentication/authentication.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { ShapeModule } from './shape/shape.module';
   imports: [
     BrowserModule,
     EmployeeModule,
-    ShapeModule
+    ShapeModule,
+    AuthenticationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
